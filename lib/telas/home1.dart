@@ -170,7 +170,7 @@ class Home1 extends StatelessWidget {
                   ],
                 ),
                     Container(
-                      color: Color.fromARGB(255, 9, 86, 253),
+                      color: const Color.fromARGB(255, 9, 86, 253),
                       child: SizedBox(
                         
                         child: Center(
