@@ -21,8 +21,6 @@ class Home1 extends StatelessWidget {
             child: Column(
               
               children: [
-                // ignore: prefer_const_constructors
-
                 GestureDetector(
                   onTap: (){},
                   child: Stack(
@@ -171,17 +169,33 @@ class Home1 extends StatelessWidget {
                     ))
                   ],
                 ),
+                    Container(
+                      color: Color.fromARGB(255, 9, 86, 253),
+                      child: SizedBox(
+                        
+                        child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                            
+                            ElevatedButton(
+                                          onPressed: () {
+                                            // Navigator.pop(context);
+                                            Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const Tela2Simples()),
+                                            );
+                                          },
+                                          child: const Text('Tela2'),
+                                        ),
+                                        const Text('Powered by Rivelino, \n just a test BETA aplication', textAlign: TextAlign.center,),
+                                        Stack(children: [Image.asset('assets/imagens/cpa.png')])
+                          ]),
+                        ),
+                      ),
+                    ),
                 
-                ElevatedButton(
-                  onPressed: () {
-                    // Navigator.pop(context);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Tela2Simples()),
-                    );
-                  },
-                  child: const Text('Tela2'),
-                ),
+                
               ],
             ),
             

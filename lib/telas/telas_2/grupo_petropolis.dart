@@ -196,6 +196,13 @@ class _PetropolisState extends State<Petropolis> {
         shouldLoop: true,
         gravity: 0.05,
         numberOfParticles: 4,
+        colors: const [
+          Colors.white,
+          Colors.green,
+          Colors.yellow,
+          Colors.blue,
+          Color.fromARGB(255, 69, 240, 252)
+        ],
         )
       ],
     );
