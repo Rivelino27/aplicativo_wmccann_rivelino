@@ -10,8 +10,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+
+        pageTransitionsTheme: const PageTransitionsTheme(builders: {
+    TargetPlatform.iOS: CupertinoPageTransitionsBuilder(), 
+    TargetPlatform.android: CupertinoPageTransitionsBuilder(),
+  }),
+
         appBarTheme: const AppBarTheme(
           backgroundColor: Color.fromARGB(255, 57, 118, 250),
           foregroundColor: Color.fromARGB(255, 230, 240, 255),

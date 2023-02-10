@@ -188,7 +188,7 @@ class Home1 extends StatelessWidget {
                                           },
                                           child: const Text('Tela2'),
                                         ),
-                                        const Text('Powered by Rivelino, \n just a test BETA aplication', textAlign: TextAlign.center,),
+                                        const Text('Powered by Rivelino, \n just a test BETA application', textAlign: TextAlign.center,),
                                         Stack(children: [Image.asset('assets/imagens/cpa.png')])
                           ]),
                         ),
