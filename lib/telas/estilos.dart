@@ -7,7 +7,8 @@ static void limpar() {
 } */
   static AppBar logoWMcCannCenter = AppBar(
     title: Align(alignment: Alignment.center, child: Image.asset('assets/imagens/WMcCann logo.png', height: 30),)
-  );
+  ); /* importar arquivo de de estilos e appBar: 
+        StyleR27.logoWMcCannCenter, dentro do Scaffold */
   static AppBar logoWMcCannRight = AppBar(
     title: Align(alignment: Alignment.centerRight, child: Image.asset('assets/imagens/WMcCann logo.png', height: 30),),
     flexibleSpace: Container(
@@ -27,7 +28,7 @@ static void limpar() {
     color: Color.fromARGB(255, 247, 240, 201),
     fontSize: 20,
     fontWeight: FontWeight.bold,
-  );
+  ); /* importar Text('', style: StyleR27.textStyleW,), */
   static const TextStyle textStyleW = TextStyle(
     color: Color.fromARGB(255, 247, 240, 201),
     fontSize: 30,

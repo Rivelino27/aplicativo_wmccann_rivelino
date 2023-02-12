@@ -133,9 +133,14 @@ class _NotificationPageState extends State<NotificationPage> {
   }
 }
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -145,7 +150,7 @@ class ProfilePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('Profile'),
-            Lottie.asset('./assets/profile.json')
+            Lottie.asset('assets/lotties/log-in-1.json')
           ],
         ),
       ),

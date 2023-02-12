@@ -1,3 +1,4 @@
+import 'package:aplicativo_wmccann_rivelino/telas/telas_2/async_await.dart';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,10 @@ class Confetti extends StatefulWidget {
   State<Confetti> createState() => _ConfettiState();
 }
 
+
+
 class _ConfettiState extends State<Confetti> {
+
   bool isPlayng = false;
   final controller = ConfettiController(
     duration: const Duration(seconds: 10)
@@ -66,6 +70,9 @@ class _ConfettiState extends State<Confetti> {
                   }
               
                 }, child: Text(isPlayng? 'Parar':"Celebrar")),
+                ElevatedButton(onPressed: () {
+                              Navigator.push(context,MaterialPageRoute(builder: (context) => const AAF()),);},
+                              child: const Text('Ir para AAF'),),
               ],
             ),
           ),

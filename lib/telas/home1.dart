@@ -1,6 +1,8 @@
 
 import 'package:aplicativo_wmccann_rivelino/telas/estilos.dart';
 import 'package:aplicativo_wmccann_rivelino/telas/tela2_simples.dart';
+import 'package:aplicativo_wmccann_rivelino/telas/telas_2/americanas.dart';
+import 'package:aplicativo_wmccann_rivelino/telas/telas_2/chevrolet.dart';
 import 'package:aplicativo_wmccann_rivelino/telas/telas_2/grupo_petropolis.dart';
 import 'package:aplicativo_wmccann_rivelino/telas/telas_2/menu.dart';
 import 'package:flutter/material.dart';
@@ -53,30 +55,36 @@ class Home1 extends StatelessWidget {
                   ),
                 ),
                 
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Image.asset('assets/imagens/3h.jpg'),
-                    Center(child: Column(
-                      children: const [
-                        Text('CHEVROLET', style: StyleR27.textStyleW,),
-                        Text('NATAL CHEVROLET',textAlign: TextAlign.center),
-                      ],
-                    ))
-                  ],
+                GestureDetector(
+                  onTap: (){Navigator.push(context,MaterialPageRoute(builder: (context) => const CHEVROLET()),); },
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Image.asset('assets/imagens/3h.jpg'),
+                      Center(child: Column(
+                        children: const [
+                          Text('CHEVROLET', style: StyleR27.textStyleW,),
+                          Text('NATAL CHEVROLET',textAlign: TextAlign.center),
+                        ],
+                      ))
+                    ],
+                  ),
                 ),
                 
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Image.asset('assets/imagens/4h.png'),
-                    Center(child: Column(
-                      children: const [
-                        Text('AMERICANAS', style: StyleR27.textStyleW,),
-                        Text('NATAL AMERICANAS',textAlign: TextAlign.center),
-                      ],
-                    ))
-                  ],
+                GestureDetector(
+                  onTap: (){Navigator.push(context,MaterialPageRoute(builder: (context) => const AMERICANAS()),); },
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Image.asset('assets/imagens/4h.png'),
+                      Center(child: Column(
+                        children: const [
+                          Text('AMERICANAS', style: StyleR27.textStyleW,),
+                          Text('NATAL AMERICANAS',textAlign: TextAlign.center),
+                        ],
+                      ))
+                    ],
+                  ),
                 ),
                 
                 Stack(

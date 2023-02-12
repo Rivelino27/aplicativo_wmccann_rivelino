@@ -7,7 +7,7 @@ class JogoDaVelha extends StatefulWidget {
   const JogoDaVelha({super.key});
 
 @override
-_JogoDaVelhaState createState() => _JogoDaVelhaState();
+State createState() => _JogoDaVelhaState();
 }
 
 class _JogoDaVelhaState extends State<JogoDaVelha> {
