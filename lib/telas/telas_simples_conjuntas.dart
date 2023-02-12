@@ -144,14 +144,45 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('Profile'),
-            Lottie.asset('assets/lotties/log-in-1.json')
-          ],
+      appBar: StyleR27.logoWMcCannCenter,
+      backgroundColor: Colors.white,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('Profile'),
+              Lottie.asset('''assets/lotties/63004-profile-password-unlock (1).json'''),
+              const SafeArea(
+                child: TextField(
+                  // autofocus: true,
+                  decoration: InputDecoration(
+                    hintText: 'Digite seu e-mail / user name',
+                    labelText: 'Usuário',
+                  ),
+                ),
+              ),
+              const SafeArea(
+                child: TextField(
+                  obscureText: true,
+                  // autofocus: true,
+                  decoration: InputDecoration(
+                    hintText: 'Senha',
+                    labelText: 'Senha',
+                    focusColor: Color.fromARGB(255, 243, 33, 173),
+                  ),
+                ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){}, child: Text('Log-In')),
+                  const SizedBox(width: 40,),
+                  ElevatedButton(onPressed: (){}, child: Text('Cadastrar')),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
